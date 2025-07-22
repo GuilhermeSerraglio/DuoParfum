@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - DuoParfum</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Finalizar Compra</h1>
+    <nav>
+      <a href="carrinho.html">Voltar ao carrinho</a>
+    </nav>
+  </header>
+
+  <main class="admin-container">
+    <h2>Resumo do Pedido</h2>
+    <ul id="resumo-carrinho"></ul>
+    <h3>Total: R$ <span id="total">0.00</span></h3>
+
+    <h2>Dados do Cliente</h2>
+    <input type="text" id="nome" placeholder="Nome completo" required>
+    <input type="email" id="email" placeholder="E-mail" required>
+
+    <button id="btnPagar">Pagar com Mercado Pago</button>
+    <p id="mensagem"></p>
+  </main>
+
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/checkout.js"></script>
+</body>
+</html>

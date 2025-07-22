@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - DuoParfum</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Administração - DuoParfum</h1>
+    <nav>
+      <a href="index.html">Voltar à loja</a>
+    </nav>
+  </header>
+
+  <main class="admin-container">
+    <h2>Adicionar novo perfume</h2>
+
+    <form id="form-cadastro">
+      <input type="text" id="nome" placeholder="Nome do perfume" required />
+      <input type="number" id="preco" placeholder="Preço (ex: 399.90)" required step="0.01" />
+      <input type="url" id="imagem" placeholder="URL da imagem" required />
+      <textarea id="descricao" placeholder="Descrição do perfume" required></textarea>
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p id="mensagem" style="color:green;"></p>
+
+    <h2>Produtos cadastrados</h2>
+    <section id="lista-produtos" class="grid-produtos">
+      <!-- Produtos aparecerão aqui -->
+    </section>
+  </main>
+
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
