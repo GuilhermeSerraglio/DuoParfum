@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Loja de Perfumes</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duo Parfum</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
@@ -16,12 +16,17 @@
   </header>
 
   <main>
-    <section id="lista-produtos" class="grid-produtos">
-      <!-- Produtos serão carregados aqui -->
+    <section id="produtos">
+      <!-- Produtos serão carregados aqui via produtos.js -->
     </section>
   </main>
 
-  <script src="firebase.js"></script>
-  <script src="produtos.js"></script>
+  <footer>
+    <p>&copy; 2025 Duo Parfum. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Firebase e produtos -->
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/produtos.js"></script>
 </body>
 </html>
